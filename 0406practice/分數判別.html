@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+  Score: <input type="number" id="score"><br><br>
+  <input type="button" onclick="myFunction()" value="Submit">
+<output id="result"></output>
+
+<script>
+function myFunction() {
+    var x;
+    x=parseInt(document.getElementById("score").value);
+    if(x>=60){
+    document.getElementById("result").innerHTML="及格";
+    }
+    else{document.getElementById("result").innerHTML="不及格";
+    }
+}
+</script>
+
+</body>
+</html>

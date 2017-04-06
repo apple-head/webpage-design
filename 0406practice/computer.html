@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+<p>Enter names in the fields, then click "Submit" to submit the form:</p>
+
+  a: <input type="text" id="a"><br>
++<br>
+  b: <input type="text" id="b"><br><br>
+  <input type="button" onclick="myFunction()" value="=">
+<output id="result"></output>
+
+<script>
+function myFunction() {
+var x,y;
+x=parseInt(document.getElementById("a").value);
+y=parseInt(document.getElementById("b").value);
+document.getElementById("result").innerHTML=x+y;
+}
+</script>
+
+</body>
+</html>
